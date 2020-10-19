@@ -129,10 +129,6 @@ const newTeamMember = () => {
     });
 };
 
-
-async function init() {
-    await newTeamMember();
-}
-init()
+newTeamMember();
 
 module.exports= newTeamMember
