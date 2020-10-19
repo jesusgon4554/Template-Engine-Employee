@@ -50,7 +50,8 @@ return replacePlaceholders(template, "team", html);
 }
 
 const replacePlaceholders = (template, placeholder, value) => {
-    const pattern = new RegExp("{{" + placeholder + "}}")
+    const pattern = new RegExp("{{" + placeholder + "}}");
+    return template.replace(pattern, value)
 };
 
 module.exports = render;
