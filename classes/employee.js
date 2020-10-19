@@ -1,7 +1,9 @@
+const fs = require('fs')
+const path = require('path')
+const util = require("util")
+
 class Employee {
     constructor(name, id, email) {
-        input.newTeamMember();
-
         this.name = name;
         this.id = id;
         this.email = email;
@@ -17,7 +19,7 @@ class Employee {
         return this.email;
     }
     getRole(){
-        return this.role;
+        return "Employee";
     }
 };
 
